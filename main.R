@@ -31,7 +31,8 @@ while( TRUE ){
   ##
   ## Save trip id to file
   out.file <- "out/sts_trips_SAE.txt"
-  write.table(x=db.var,file=out.file,sep=",",quote=F,row.names = F,col.names = T,append = T)
+  if( !file.exists(out.file) ) write.table(x=db.var,file=out.file,sep=",",quote=F,row.names = F,col.names = T)
+  else write.table(x=db.var,file=out.file,sep=",",quote=F,row.names = F,col.names = F,append = T)
   ##
   ## Wait for freq seconds
   Sys.sleep(5)
