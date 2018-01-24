@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 suppressMessages(library(lubridate))
 suppressMessages(library(plyr))
 suppressMessages(library(tidyr))
