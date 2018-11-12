@@ -26,7 +26,7 @@ while( TRUE ){
   ##
   ## Current time
   time.now <- Sys.time()
-  attr(time.now,"tzone") <- "EST"
+  attr(time.now,"tzone") <- "America/Montreal"
   ##
   ## Database
   db.var <- query.db(con.in)
